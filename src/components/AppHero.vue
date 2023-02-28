@@ -1,6 +1,5 @@
 <template>
     <div class="jumbo">
-        <img class="jumbo-img" src="/img/vite-background.jpg" alt="">
         <p class="jumbo-title"> {{ text }} </p>
     </div>
 </template>
@@ -18,10 +17,13 @@ export default {
 <style>
 .jumbo {
     position: relative;
-}
+    background-image: url('/img/vite-background.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 525px;
+    width: 1084px;
 
-.jumbo-img {
-    height: 500px;
 }
 
 .jumbo-title {
@@ -30,5 +32,7 @@ export default {
     left: 50%;
     transform: translateX(-50%);
     color: black;
+    font-size: 21px;
+    filter: drop-shadow(0px 8px 3px black)
 }
 </style>

@@ -12,8 +12,8 @@ export default {
 </script>
 
 <template>
-  <AppTitle />
   <AppHero />
+  <AppTitle />
 </template>
 
 <style scoped></style>
